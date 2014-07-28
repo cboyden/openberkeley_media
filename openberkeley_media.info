@@ -22,3 +22,4 @@ features[image][] = width_100
 features[image][] = width_200
 features[image][] = width_300
 features[image][] = width_400
+features_exclude[dependencies][panopoly_wysiwyg] = panopoly_wysiwyg
