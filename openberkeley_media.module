@@ -51,3 +51,21 @@ function openberkeley_media_media_wysiwyg_wysiwyg_allowed_view_modes_alter(&$opt
     }
   }
 }
+
+/**
+ * Implements hook_strongarm_alter().
+ */
+function openberkeley_media_strongarm_alter(&$data) {
+  if (isset($data['media_wysiwyg_wysiwyg_allowed_types'])) {
+    $data['media_wysiwyg_wysiwyg_allowed_types']->value = array(
+      'document',
+      'image',
+    );
+  }
+  if (isset($data['media_wysiwyg_wysiwyg_browser_plugins'])) {
+    $data['media_wysiwyg_wysiwyg_browser_plugins']->value = array(
+      'upload',
+      'media_default--media_browser_1',
+    );
+  }
+}
