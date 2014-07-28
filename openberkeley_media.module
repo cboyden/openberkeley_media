@@ -45,7 +45,7 @@ function openeberkeley_media_entity_info_alter(&$info) {
 function openberkeley_media_media_wysiwyg_wysiwyg_allowed_view_modes_alter(&$options, $context) {
   if ($context->type == 'image') {
     // Unset some view modes that we don't use.
-    $unused_view_modes = array('teaser', 'media_link', 'media_original');
+    $unused_view_modes = array('teaser', 'media_link', 'media_original', 'untouched');
     foreach ($unused_view_modes as $view_mode) {
       unset($options[$view_mode]);
     }
