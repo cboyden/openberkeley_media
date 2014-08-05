@@ -20,7 +20,7 @@ function openberkeley_media_module_implements_alter(&$implementations, $hook) {
 /**
  * Implements hook_entity_info_alter().
  */
-function openeberkeley_media_entity_info_alter(&$info) {
+function openberkeley_media_entity_info_alter(&$info) {
   if (!empty($info['file']['view modes'])) {
     // Add additional file view modes for each of the image styles.
     $view_modes = array(
@@ -31,7 +31,7 @@ function openeberkeley_media_entity_info_alter(&$info) {
       'untouched' => t('Untouched'),
     );
     foreach ($view_modes as $view_mode => $label) {
-      $file['file']['view modes'][$view_mode] = array(
+      $info['file']['view modes'][$view_mode] = array(
         'label' => $label,
         'custom settings' => TRUE,
       );
