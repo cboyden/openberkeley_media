@@ -31,6 +31,19 @@ function openberkeley_media_image_default_styles() {
     'name' => 'width_100',
     'label' => 'width_100',
     'effects' => array(
+      9 => array(
+        'label' => 'Manual Crop: Reuse cropped style',
+        'help' => 'Reuse a crop selection from another Manual Crop enabled image style.',
+        'effect callback' => 'manualcrop_reuse_effect',
+        'form callback' => 'manualcrop_reuse_form',
+        'summary theme' => 'manualcrop_reuse_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'panopoly_image_full',
+        ),
+        'weight' => 1,
+      ),
       2 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
@@ -55,6 +68,19 @@ function openberkeley_media_image_default_styles() {
     'name' => 'width_200',
     'label' => 'width_200',
     'effects' => array(
+      10 => array(
+        'label' => 'Manual Crop: Reuse cropped style',
+        'help' => 'Reuse a crop selection from another Manual Crop enabled image style.',
+        'effect callback' => 'manualcrop_reuse_effect',
+        'form callback' => 'manualcrop_reuse_form',
+        'summary theme' => 'manualcrop_reuse_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'panopoly_image_full',
+        ),
+        'weight' => 0,
+      ),
       5 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
@@ -79,6 +105,19 @@ function openberkeley_media_image_default_styles() {
     'name' => 'width_300',
     'label' => 'width_300',
     'effects' => array(
+      11 => array(
+        'label' => 'Manual Crop: Reuse cropped style',
+        'help' => 'Reuse a crop selection from another Manual Crop enabled image style.',
+        'effect callback' => 'manualcrop_reuse_effect',
+        'form callback' => 'manualcrop_reuse_form',
+        'summary theme' => 'manualcrop_reuse_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'panopoly_image_full',
+        ),
+        'weight' => 0,
+      ),
       6 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
@@ -103,6 +142,19 @@ function openberkeley_media_image_default_styles() {
     'name' => 'width_400',
     'label' => 'width_400',
     'effects' => array(
+      12 => array(
+        'label' => 'Manual Crop: Reuse cropped style',
+        'help' => 'Reuse a crop selection from another Manual Crop enabled image style.',
+        'effect callback' => 'manualcrop_reuse_effect',
+        'form callback' => 'manualcrop_reuse_form',
+        'summary theme' => 'manualcrop_reuse_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'panopoly_image_full',
+        ),
+        'weight' => 0,
+      ),
       7 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
