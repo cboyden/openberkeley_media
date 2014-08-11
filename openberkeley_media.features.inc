@@ -23,7 +23,21 @@ function openberkeley_media_image_default_styles() {
   $styles['untouched'] = array(
     'name' => 'untouched',
     'label' => 'untouched',
-    'effects' => array(),
+    'effects' => array(
+      13 => array(
+        'label' => 'Manual Crop: Reuse cropped style',
+        'help' => 'Reuse a crop selection from another Manual Crop enabled image style.',
+        'effect callback' => 'manualcrop_reuse_effect',
+        'form callback' => 'manualcrop_reuse_form',
+        'summary theme' => 'manualcrop_reuse_summary',
+        'module' => 'manualcrop',
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'panopoly_image_full',
+        ),
+        'weight' => 0,
+      ),
+    ),
   );
 
   // Exported image style: width_100.
