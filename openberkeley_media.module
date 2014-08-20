@@ -33,7 +33,7 @@ function openberkeley_media_entity_info_alter(&$info) {
     foreach ($view_modes as $view_mode => $label) {
       $info['file']['view modes'][$view_mode] = array(
         'label' => $label,
-        'custom settings' => TRUE,
+        'custom settings' => FALSE,
       );
     }
   }
